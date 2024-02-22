@@ -11,11 +11,23 @@ body {
     flex-wrap: nowrap;
 }
 
-#wrapper {
+.container, .inner-button, #next-question, #explanation {
+    max-width: 100%;
+}
 
+#wrapper {
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 12px 12px 2px 1px lightblue;
+    max-height: 600px;
+    overflow-y: auto;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 header {
@@ -75,6 +87,46 @@ main {
 }
 
 #explanation {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#wrapper {
+    /* ... */
+    width: 50%; /* You may want to set a max-width as well to limit the maximum size */
+    max-width: 600px; /* Example maximum width */
+    /* ... */
+}
+
+/* Update this for all child elements to be relative to the #wrapper */
+.container, .inner-button, #next-question, #score, #statement {
+    max-width: 100%; /* This ensures they don't exceed the #wrapper's width */
+    width: calc(100% - 40px); /* Example: subtracting the total padding from the #wrapper */
+}
+
+header {
+    /* ... */
+    width: calc(100% - 40px); /* This should match the width calculation of other children */
+    /* ... */
+}
+
+@media (max-width: 768px) {
+    #wrapper {
+        width: 75%;
+        /* No need to set width for children here if they are already relative to #wrapper */
+    }
+}
+
+@media (max-width: 480px) {
+    #wrapper {
+        width: 95%;
+        /* No need to set width for children here if they are already relative to #wrapper */
+    }
+}
+
+@media (max-width: 250px) {
+    #wrapper {
+        width: 100%;
+        /* No need to set width for children here if they are already relative to #wrapper */
+    }
 }
