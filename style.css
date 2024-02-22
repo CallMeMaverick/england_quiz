@@ -4,12 +4,14 @@
     text-align: center;
 }
 
-
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #wrapper {
-    position: relative; /* Or relative, depending on your layout */
-    min-width: 600px; /* Set to the minimum width you want */
-    min-height: 400px; /* Optional: if you also want to control the height */
+
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 12px 12px 2px 1px lightblue;
@@ -30,7 +32,7 @@ main {
 }
 
 .inner-button, #next-question {
-    width: 100%;
+    width: 95%;
     font-size: 20px;
     margin: 2px;
     padding: 5px;
@@ -38,6 +40,10 @@ main {
 
 #option-buttons {
     margin-top: 1rem;
+}
+
+#next-question {
+    width: 95%;
 }
 
 #score {
