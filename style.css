@@ -4,12 +4,12 @@
     text-align: center;
 }
 
-body {
-    padding: 1rem;
-    margin: 1rem 20rem;
-}
+
 
 #wrapper {
+    position: relative; /* Or relative, depending on your layout */
+    min-width: 600px; /* Set to the minimum width you want */
+    min-height: 400px; /* Optional: if you also want to control the height */
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 12px 12px 2px 1px lightblue;
