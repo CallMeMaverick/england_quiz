@@ -8,6 +8,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
 }
 
 #wrapper {
@@ -62,6 +63,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .correct {
