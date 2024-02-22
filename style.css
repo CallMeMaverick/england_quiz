@@ -1,0 +1,72 @@
+* {
+    font-family: "Gill Sans", serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+body {
+    padding: 1rem;
+    margin: 1rem 20rem;
+}
+
+#wrapper {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 12px 12px 2px 1px lightblue;
+}
+
+header {
+    margin: 1rem auto;
+    padding: 1rem;
+    width: 50%;
+}
+
+main {
+    min-width: 25rem;
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-button, #next-question {
+    width: 100%;
+    font-size: 20px;
+    margin: 2px;
+    padding: 5px;
+}
+
+#option-buttons {
+    margin-top: 1rem;
+}
+
+#score {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 1.5rem;
+}
+
+#statement {
+    margin-bottom: 1.5rem;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: lightpink;
+}
+
+#explanation {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
